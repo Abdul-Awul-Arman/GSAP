@@ -22,4 +22,11 @@
     //     stagger:-1,
     // })
 
-    WebGLSampler.
+    // gsap.from("#box",{
+    //     x:1000,
+    //     duration:2,
+    //     delay:1,
+    //     repeat:-1,
+    //     yoyo:true,
+        
+    // })

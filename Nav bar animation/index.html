@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Lesson 7: Interactive Navigation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .menu-overlay {
+            clip-path: circle(0% at 95% 5%);
+        }
+
+        .nav-link {
+            display: block;
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            color: #1c1917;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .nav-link span {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-stone-50 text-stone-900 font-sans overflow-x-hidden">
+
+    <!-- Chosen Palette: Stone (Neutral) & Amber (Accent) -->
+
+    <!-- Application Structure Plan:
+         1. Hero Section: A standard website header with a unique "Burger" button.
+         2. Full-Screen Overlay: A hidden layer that uses 'clip-path' for a circular reveal.
+         3. Staggered Content: Links that slide up one by one when the menu opens.
+         4. Logic Panel: Explaining the 'reversed()' toggle trick.
+         
+         WHY: Beginners often try to write two separate functions for opening and closing menus. 
+         This lesson teaches the "Pro" way: one timeline, played and reversed.
+    -->
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full p-8 flex justify-between items-center z-50">
+        <div class="text-xl font-black tracking-tighter uppercase">Studio.GSAP</div>
+
+        <!-- Burger Button -->
+        <button id="menuBtn" class="group flex flex-col gap-1.5 p-4 focus:outline-none">
+            <span id="line1" class="w-8 h-0.5 bg-stone-900 transition-transform"></span>
+            <span id="line2" class="w-8 h-0.5 bg-stone-900 transition-transform"></span>
+            <span id="line3" class="w-5 h-0.5 bg-stone-900 self-end transition-transform"></span>
+        </button>
+    </nav>
+
+    <!-- Hero Content -->
+    <main class="h-screen flex items-center justify-center p-8">
+        <div class="max-w-4xl text-center">
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter">THE ART OF THE <span
+                    class="text-amber-600">REVEAL</span>.</h1>
+            <p class="text-stone-500 text-lg md:text-xl">Click the menu button in the top right to see GSAP transform
+                the navigation experience.</p>
+        </div>
+    </main>
+
+    <!-- Full Screen Menu Overlay -->
+    <div id="menuOverlay"
+        class="menu-overlay fixed inset-0 bg-amber-400 z-40 flex items-center justify-center p-12 pointer-events-none">
+        <div class="w-full max-w-4xl">
+            <div class="text-xs font-bold uppercase tracking-widest text-amber-900 mb-8 opacity-50">Navigation</div>
+            <div class="flex flex-col gap-4">
+                <a href="#" class="nav-link"><span>Portfolio</span></a>
+                <a href="#" class="nav-link"><span>Expertise</span></a>
+                <a href="#" class="nav-link"><span>Case Studies</span></a>
+                <a href="#" class="nav-link"><span>About Studio</span></a>
+                <a href="#" class="nav-link"><span>Contact</span></a>
+            </div>
+
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-amber-500 pt-8">
+                <div>
+                    <div class="text-[10px] font-bold uppercase text-amber-900 mb-2">Social</div>
+                    <div class="text-sm font-medium">Instagram / Twitter</div>
+                </div>
+                <div>
+                    <div class="text-[10px] font-bold uppercase text-amber-900 mb-2">Inquiries</div>
+                    <div class="text-sm font-medium">hello@gsap.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explanation Box (Bottom) -->
+    <div class="fixed bottom-8 left-8 max-w-sm bg-white p-6 rounded-2xl shadow-xl border border-stone-200 z-30">
+        <h3 class="font-bold text-stone-800 mb-2">The Toggle Logic</h3>
+        <p class="text-xs text-stone-500 leading-relaxed mb-4">
+            Instead of writing two animations, we create one <code>menuTL</code> and check its state:
+        </p>
+        <div class="bg-stone-900 text-amber-400 p-3 rounded-lg font-mono text-[10px] leading-normal">
+            if (tl.reversed()) { <br>
+            &nbsp;&nbsp;tl.play(); <br>
+            } else { <br>
+            &nbsp;&nbsp;tl.reverse(); <br>
+            }
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

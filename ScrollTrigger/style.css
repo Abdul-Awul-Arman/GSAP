@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+    
+   
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #f12711 0%, #f5af19 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+}
+
+h1{
+    font-size: 30vw;
+    padding:10px;
+    text-transform: uppercase;
+    
+}
