@@ -88,9 +88,8 @@
             <div class=" w-full  flex items-center justify-center">
                 <!-- Hero Image -->
                 <div class="w-full  flex items-center justify-center overflow-hidden rounded-3xl neo-shadow">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
-                         alt="Digital Marketing Landscape" 
-                         class="w-full h-full object-cover" />
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                        alt="Digital Marketing Landscape" class="w-full h-full object-cover" />
                 </div>
             </div>
         </div>
@@ -109,122 +108,125 @@
         </div>
     </section>
 
-    <!-- Services Section Header -->
-    <section class="max-w-7xl mx-auto px-6 pt-24 pb-12 services">
-        <div class="flex flex-col md:flex-row items-center gap-8 ">
-            <h2 class="bg-lime-green px-4 py-1 text-4xl font-bold rounded-xl neo-shadow-sm">Services</h2>
-            <p class="max-w-2xl text-lg text-zinc-600">
-                At our digital marketing agency, we offer a range of services to help businesses grow and succeed
-                online. These services include:
-            </p>
-        </div>
-    </section>
 
     <!-- Services Grid -->
-    <section class="max-w-7xl mx-auto px-6 pb-24 grid md:grid-cols-2 gap-10">
+    <!-- Services Section Header -->
+    <div class="services-grid">
+        <section class="max-w-7xl mx-auto px-6 pt-24 pb-12 services-header">
+            <div class="flex flex-col md:flex-row items-center gap-8 ">
+                <h2 class="bg-lime-green px-4 py-1 text-4xl font-bold rounded-xl neo-shadow-sm">Services</h2>
+                <p class="max-w-2xl text-lg text-zinc-600">
+                    At our digital marketing agency, we offer a range of services to help businesses grow and succeed
+                    online. These services include:
+                </p>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-6 pb-24 grid md:grid-cols-2 gap-10 ">
 
-        <!-- Service Card 1: SEO -->
-        <div
-            class="bg-zinc-100 p-12 rounded-[45px] neo-shadow flex justify-between group cursor-pointer hover:bg-lime-green transition-colors duration-300">
-            <div class="flex flex-col justify-between h-full">
-                <div>
-                    <span
-                        class="bg-lime-green group-hover:bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit">Search
-                        engine</span>
-                    <span
-                        class="bg-lime-green group-hover:bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit mt-1">optimization</span>
-                </div>
-                <a href="#" class="flex items-center gap-4 text-xl font-medium mt-16">
-                    <div
-                        class="w-10 h-10 bg-black text-lime-green flex items-center justify-center rounded-full group-hover:bg-white group-hover:text-black transition-colors">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="3">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
+            <!-- Service Card 1: SEO -->
+            <div
+                class="bg-zinc-100 p-12 rounded-[45px] neo-shadow flex justify-between group cursor-pointer hover:bg-lime-green transition-colors duration-300 card-left line-1">
+                <div class="flex flex-col justify-between h-full">
+                    <div>
+                        <span
+                            class="bg-lime-green group-hover:bg-white line-1 px-2 py-1 text-2xl font-bold rounded-lg block w-fit">Search
+                            engine</span>
+                        <span
+                            class="bg-lime-green group-hover:bg-white line-1 px-2 py-1 text-2xl font-bold rounded-lg block w-fit mt-1">optimization</span>
                     </div>
-                    Learn more
-                </a>
+                    <a href="#" class="flex items-center gap-4 text-xl font-medium mt-16">
+                        <div
+                            class="w-10 h-10 bg-black text-lime-green flex items-center justify-center rounded-full group-hover:bg-white group-hover:text-black transition-colors">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                        Learn more
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-40 h-40 bg-white/50 rounded-3xl flex items-center justify-center text-6xl">🔍</div>
+                </div>
             </div>
-            <div class="flex items-center">
-                <div class="w-40 h-40 bg-white/50 rounded-3xl flex items-center justify-center text-6xl">🔍</div>
-            </div>
-        </div>
 
-        <!-- Service Card 2: PPC -->
-        <div
-            class="bg-lime-green p-12 rounded-[45px] neo-shadow flex justify-between cursor-pointer hover:brightness-105 transition-all">
-            <div class="flex flex-col justify-between h-full">
-                <div>
-                    <span class="bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit">Pay per click</span>
-                    <span class="bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit mt-1">advertising</span>
-                </div>
-                <a href="#" class="flex items-center gap-4 text-xl font-medium mt-16">
-                    <div class="w-10 h-10 bg-black text-lime-green flex items-center justify-center rounded-full">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="3">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
+            <!-- Service Card 2: PPC -->
+            <div
+                class="bg-lime-green p-12 rounded-[45px] neo-shadow flex justify-between cursor-pointer hover:brightness-105 transition-all card-right line-1">
+                <div class="flex flex-col justify-between h-full">
+                    <div>
+                        <span class="bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit">Pay per click</span>
+                        <span
+                            class="bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit mt-1">advertising</span>
                     </div>
-                    Learn more
-                </a>
+                    <a href="#" class="flex items-center gap-4 text-xl font-medium mt-16">
+                        <div class="w-10 h-10 bg-black text-lime-green flex items-center justify-center rounded-full">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                        Learn more
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-40 h-40 bg-white rounded-3xl flex items-center justify-center text-6xl">🖱️</div>
+                </div>
             </div>
-            <div class="flex items-center">
-                <div class="w-40 h-40 bg-white rounded-3xl flex items-center justify-center text-6xl">🖱️</div>
-            </div>
-        </div>
 
-        <!-- Service Card 3: Social Media -->
-        <div class="bg-black p-12 rounded-[45px] neo-shadow flex justify-between cursor-pointer group">
-            <div class="flex flex-col justify-between h-full">
-                <div>
-                    <span class="bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit">Social media</span>
-                    <span class="bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit mt-1">marketing</span>
-                </div>
-                <a href="#" class="flex items-center gap-4 text-xl font-medium mt-16 text-white">
-                    <div class="w-10 h-10 bg-white text-black flex items-center justify-center rounded-full">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="3">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
+            <!-- Service Card 3: Social Media -->
+            <div class="bg-black p-12 rounded-[45px] neo-shadow flex justify-between cursor-pointer group card-left line-2">
+                <div class="flex flex-col justify-between h-full ">
+                    <div>
+                        <span class="bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit">Social media</span>
+                        <span class="bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit mt-1">marketing</span>
                     </div>
-                    Learn more
-                </a>
+                    <a href="#" class="flex items-center gap-4 text-xl font-medium mt-16 text-white">
+                        <div class="w-10 h-10 bg-white text-black flex items-center justify-center rounded-full">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                        Learn more
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-40 h-40 bg-white/10 rounded-3xl flex items-center justify-center text-6xl">📱</div>
+                </div>
             </div>
-            <div class="flex items-center">
-                <div class="w-40 h-40 bg-white/10 rounded-3xl flex items-center justify-center text-6xl">📱</div>
-            </div>
-        </div>
 
-        <!-- Service Card 4: Email Marketing -->
-        <div
-            class="bg-zinc-100 p-12 rounded-[45px] neo-shadow flex justify-between cursor-pointer hover:bg-lime-green group transition-colors duration-300">
-            <div class="flex flex-col justify-between h-full">
-                <div>
-                    <span
-                        class="bg-lime-green group-hover:bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit">E-mail</span>
-                    <span
-                        class="bg-lime-green group-hover:bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit mt-1">marketing</span>
-                </div>
-                <a href="#" class="flex items-center gap-4 text-xl font-medium mt-16">
-                    <div
-                        class="w-10 h-10 bg-black text-lime-green flex items-center justify-center rounded-full group-hover:bg-white group-hover:text-black transition-colors">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="3">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
+            <!-- Service Card 4: Email Marketing -->
+            <div
+                class="bg-zinc-100 p-12 rounded-[45px] neo-shadow flex justify-between cursor-pointer hover:bg-lime-green group transition-colors duration-300 card-right line-2">
+                <div class="flex flex-col justify-between h-full">
+                    <div>
+                        <span
+                            class="bg-lime-green group-hover:bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit">E-mail</span>
+                        <span
+                            class="bg-lime-green group-hover:bg-white px-2 py-1 text-2xl font-bold rounded-lg block w-fit mt-1">marketing</span>
                     </div>
-                    Learn more
-                </a>
+                    <a href="#" class="flex items-center gap-4 text-xl font-medium mt-16">
+                        <div
+                            class="w-10 h-10 bg-black text-lime-green flex items-center justify-center rounded-full group-hover:bg-white group-hover:text-black transition-colors">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                        Learn more
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-40 h-40 bg-white/50 rounded-3xl flex items-center justify-center text-6xl">📩</div>
+                </div>
             </div>
-            <div class="flex items-center">
-                <div class="w-40 h-40 bg-white/50 rounded-3xl flex items-center justify-center text-6xl">📩</div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- CTA Section -->
     <section class="max-w-7xl mx-auto px-6 mb-24">
@@ -317,7 +319,7 @@
         &copy; 2024 WizardZ Digital Marketing Agency. All rights reserved.
     </footer>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
         integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
